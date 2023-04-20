@@ -1,0 +1,18 @@
+[package]
+name = "packet"
+description = "A DNS packet encoder/decoder"
+version = "0.1.0"
+edition.workspace = true
+authors.workspace = true
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono.workspace = true
+env_logger.workspace = true
+log.workspace = true
+
+
+[dev-dependencies]
+fake = { workspace = true, features = ["chrono", "http", "derive"] }
+rand.workspace = true

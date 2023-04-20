@@ -1,0 +1,21 @@
+[workspace]
+members = [
+	"packet",
+	"encoder",
+	"decoder",
+]
+
+
+[workspace.package]
+edition = "2021"
+authors = ["Fernando Furtado <fwfurtado@gmail.com>"]
+description = "Dns server"
+license = "MIT"
+readme = "README.md"
+
+[workspace.dependencies]
+chrono = "0.4.19"
+env_logger = "0.10.0"
+log = "0.4.17"
+fake = {version = "2.4", features = ["chrono", "http", "derive"]}
+rand = "0.8.5"
